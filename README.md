@@ -29,3 +29,18 @@ Additional build step to bundle static libraries with app package:
 ```
 <Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/fango-wallet.app
 ```
+
+-----------
+Wallet Release History
+=====
+<h1 align="center"><img title="The Long Night Is Coming" src="https://github.com/aejontargaryen/DRGL-X/blob/master/images/DRGL/Splash_I%26F.png" width="1800" height="500" ><img/></h1>
+
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/aejontargaryen/DRGL-X/master/images/DRGL/splash_Ironborne.png" width="1800" height="500" ><img/></h1>
+
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/aejontargaryen/DRGL-X/master/images/DRGL/splash_Dacarys.png" width="1800" height="500" ><img/></h1>
+
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/aejontargaryen/DRGL-X/master/images/DRGL/splash_OathKprII.png" width="1800" height="500" ><img/></h1>
+
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/aejontargaryen/DRGL-X/master/images/DRGL/splash_OathKpr.png" width="1800" height="500" ><img/></h1>
+
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/aejontargaryen/DRGL-X/master/images/DRGL/splash_131.png" width="1800" height="500" ><img/></h1>
