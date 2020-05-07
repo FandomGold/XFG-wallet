@@ -1,6 +1,6 @@
-<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png" width="1800" height="500" ><img/></h1>
+<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/GoldWallet/master/src/images/splash.png" width="1800" height="500" ><img/></h1>
 
-Binaries are made available by Fandom Gold Project community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For more up to date info & tons of ways to earn fango via tips- come [join us](http://discord.fandom.gold) in our discord server.
+Binaries are made available by Fandom Gold project community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. 
 
 
 ### Building on *nix
@@ -8,11 +8,11 @@ Binaries are made available by Fandom Gold Project community members. If you are
 **1. Clone wallet sources**
 
 ```
-git clone --recursive https://github.com/FandomGold/fango-wallet
+git clone --recursive https://github.com/FandomGold/GoldWallet
 ```
 
 ```
-cd fango-wallet
+cd GoldWallet
 ```
 
 **2. Build**
@@ -27,5 +27,5 @@ cmake -DCMAKE_PREFIX_PATH:STRING=<Qt path/Qt version/clang_64/>
 ```
 Additional build step to bundle static libraries with app package:
 ```
-<Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/fango-wallet.app
+<Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/FandomGold.app
 ```

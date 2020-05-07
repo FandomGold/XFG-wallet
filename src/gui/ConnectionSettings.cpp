@@ -31,13 +31,13 @@ ConnectionSettingsDialog::~ConnectionSettingsDialog() {
 
 void ConnectionSettingsDialog::initConnectionSettings() {
  QString connection = Settings::instance().getConnection();
-    /*if(connection.compare("auto") == 0) {
+    if(connection.compare("auto") == 0) {
         m_ui->radioButton_1->setChecked(true);
     }
     else if(connection.compare("embedded") == 0) {
         m_ui->radioButton_2->setChecked(true);
     }
-    else*/ if(connection.compare("local") == 0) {
+    else if(connection.compare("local") == 0) {
        m_ui->radioButton_3->setChecked(true);
     }
     else if(connection.compare("remote") == 0) {
@@ -59,7 +59,7 @@ void ConnectionSettingsDialog::initConnectionSettings() {
 
 QString ConnectionSettingsDialog::setConnectionMode() const {
     QString connectionMode;
-    /*if(m_ui->radioButton_1->isChecked())
+    if(m_ui->radioButton_1->isChecked())
     {
         connectionMode = "auto";
     }
@@ -67,7 +67,7 @@ QString ConnectionSettingsDialog::setConnectionMode() const {
     {
         connectionMode = "embedded";
     }
-    else */if(m_ui->radioButton_3->isChecked())
+    else if(m_ui->radioButton_3->isChecked())
     {
         connectionMode = "local";
     }

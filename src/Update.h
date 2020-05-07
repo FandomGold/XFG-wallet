@@ -10,7 +10,7 @@
 #include <QNetworkReply>
 #include <QUrl>
 
-const static QString FANGO_UPDATE_URL = "https://raw.githubusercontent.com/FandomGold/GoldWallet/master/update.txt";
+const static QString DRGLCOIN_UPDATE_URL = "http://drgl.info/update.txt";
 
 class Updater : public QObject
 {

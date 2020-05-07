@@ -1,14 +1,14 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Fandom Gold
-GenericName=GoldWallet
-Comment=Fandom Gold Wallet
-Exec=GOLDwallet %U
+Name=Fango
+GenericName=FangoWallet
+Comment=Fango Wallet
+Exec=Fango-wallet %U
 Terminal=false
 Type=Application
 Icon=fandomgold
 MimeType=x-scheme-handler/fandomgold;
 Categories=Office;Finance;
-Version=3.0.2
+Version=2.0.3
 
-Name[en_US]=GoldWallet.desktop
+Name[en_US]=Fango-wallet.desktop

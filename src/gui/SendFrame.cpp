@@ -179,16 +179,16 @@ void SendFrame::openUriClicked() {
 }
 
 void SendFrame::parsePaymentRequest(QString _request) {
-    if(_request.startsWith("fandomgold://", Qt::CaseInsensitive))
+    if(_request.startsWith("DRGL://", Qt::CaseInsensitive))
     {
-       _request.replace(0, 13, "fandomgold:");
+       _request.replace(0, 13, "DRGL:");
     }
-    if(!_request.startsWith("fandomgold:", Qt::CaseInsensitive)) {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with fandomgold:"), QtCriticalMsg));
+    if(!_request.startsWith("DRGL:", Qt::CaseInsensitive)) {
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with DRGL:"), QtCriticalMsg));
       return;
     }
 
-    if(_request.startsWith("fandomgold:", Qt::CaseInsensitive))
+    if(_request.startsWith("DRGL:", Qt::CaseInsensitive))
     {
       _request.remove(0, 11);
     }
@@ -255,10 +255,10 @@ void SendFrame::sendClicked() {
         }
       }
 
-      // Fandom Gold Project donation
+      // Dev donation
       if (m_ui->donateCheckBox->isChecked()) {
           CryptoNote::WalletLegacyTransfer walletTransfer;
-          walletTransfer.address = "fango4Uxurg6s7mTd7r7aZeMxkdrsPNYQM4yPjmX6rTRh4VZx4QGqe3K29vKB9sEBxMztybnbj3ZvNgGS7ztzLZ88x83hM3GwYD";
+          walletTransfer.address = "dRGLkSxX3YaRHbvuYYq2iKGPCaQDSKFUVUMYcGqnSyJcMT1DqUBJmfzbvQitnWQ3Fre9SsviDrXkg5LKBykcb7np2Abu2dd16c";
           walletTransfer.amount = CurrencyAdapter::instance().parseAmount(m_ui->m_donateSpin->cleanText());
           walletTransfers.push_back(walletTransfer);
       }

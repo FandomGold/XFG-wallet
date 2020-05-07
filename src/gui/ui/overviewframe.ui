@@ -123,7 +123,7 @@
           </property>
           <property name="styleSheet">
            <string notr="true">font-family: zelda;
-color:rgb(211, 215, 207);</string>
+color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 223, 255), stop:1 rgba(255, 0, 216, 255));</string>
           </property>
           <property name="lineWidth">
            <number>0</number>
@@ -216,6 +216,35 @@ color:rgb(211, 215, 207);</string>
              </color>
             </brush>
            </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="LinearGradientPattern">
+             <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+              <gradientstop position="0.000000000000000">
+               <color alpha="255">
+                <red>0</red>
+                <green>255</green>
+                <blue>223</blue>
+               </color>
+              </gradientstop>
+              <gradientstop position="1.000000000000000">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>216</blue>
+               </color>
+              </gradientstop>
+             </gradient>
+            </brush>
+           </colorrole>
           </active>
           <inactive>
            <colorrole role="WindowText">
@@ -261,6 +290,35 @@ color:rgb(211, 215, 207);</string>
               <green>0</green>
               <blue>0</blue>
              </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="LinearGradientPattern">
+             <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+              <gradientstop position="0.000000000000000">
+               <color alpha="255">
+                <red>0</red>
+                <green>255</green>
+                <blue>223</blue>
+               </color>
+              </gradientstop>
+              <gradientstop position="1.000000000000000">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>216</blue>
+               </color>
+              </gradientstop>
+             </gradient>
             </brush>
            </colorrole>
           </inactive>
@@ -310,6 +368,35 @@ color:rgb(211, 215, 207);</string>
              </color>
             </brush>
            </colorrole>
+            <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="LinearGradientPattern">
+             <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+              <gradientstop position="0.000000000000000">
+               <color alpha="255">
+                <red>0</red>
+                <green>255</green>
+                <blue>223</blue>
+               </color>
+              </gradientstop>
+              <gradientstop position="1.000000000000000">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>216</blue>
+               </color>
+              </gradientstop>
+             </gradient>
+            </brush>
+           </colorrole>
           </disabled>
          </palette>
         </property>
@@ -320,7 +407,8 @@ color:rgb(211, 215, 207);</string>
          <bool>true</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(238, 238, 236);</string>
+         <string notr="true">color: rgb(238, 238, 236);
+         </string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1268,7 +1356,6 @@ font-weight: bold;
          <string notr="true">color: qconicalgradient(cx:0.30307, cy:0.705, angle:205.6, stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.507463 rgba(187, 156, 51, 255), stop:0.537313 rgba(194, 177, 31, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255));
 background-color: transparent;
 font-weight: bold;
-
 </string>
         </property>
         <property name="text">

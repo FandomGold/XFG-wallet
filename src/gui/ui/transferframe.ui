@@ -134,12 +134,10 @@
      </property>
      <property name="font">
       <font>
-       <family>orbitron</family>
-       <pointsize>11</pointsize>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
      </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#eeeeec;&quot;&gt;Pay To:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -241,12 +239,10 @@ border:  2pt solid qconicalgradient(cx:0.5, cy:0.5, angle:272.3, stop:0 rgba(136
     <widget class="QLabel" name="label_3">
      <property name="font">
       <font>
-       <family>orbitron</family>
-       <pointsize>11</pointsize>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
      </property>
      <property name="text">
       <string>Amount:</string>
@@ -299,18 +295,10 @@ border:  2pt solid qconicalgradient(cx:0.5, cy:0.5, angle:272.3, stop:0 rgba(136
       <widget class="QLabel" name="label_2">
        <property name="font">
         <font>
-         <family>orbitron</family>
          <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="lineWidth">
-        <number>1</number>
-       </property>
-       <property name="midLineWidth">
-        <number>0</number>
        </property>
        <property name="text">
         <string>Save to Contacts as:  </string>

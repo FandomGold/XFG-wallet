@@ -57,7 +57,7 @@ MiningFrame::~MiningFrame() {
 void MiningFrame::enableSolo() {
   m_sychronized = true;
   if (!m_solo_mining) {
-    m_ui->m_startSolo->setDisabled(true);
+    m_ui->m_startSolo->setEnabled(true);
   }
 }
 
@@ -67,7 +67,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (hashRate == 0) {
       return;
     }
-    m_ui->m_poolLabel->setText(tr("Pool mining Fandom Gold - Your Hashrate sent to pool is %1 H/s").arg(hashRate));
+    m_ui->m_poolLabel->setText(tr("Pool mining Fango - Your Hashrate sent to pool is %1 H/s").arg(hashRate));
     return;
   }
 
@@ -76,7 +76,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (soloHashRate == 0) {
       return;
     }
-    m_ui->m_soloLabel->setText(tr("Solo mining Fandom Gold - Your Hashrate is %1 H/s").arg(soloHashRate));
+    m_ui->m_soloLabel->setText(tr("Solo mining Fango - Your Hashrate is %1 H/s").arg(soloHashRate));
     return;
   }
 

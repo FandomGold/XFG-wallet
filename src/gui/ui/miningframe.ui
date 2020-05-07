@@ -308,7 +308,7 @@ border-color: rgb(136, 138, 133);
    <item row="2" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="minimumSize">
       <size>
@@ -385,7 +385,7 @@ border-color: rgb(136, 138, 133);
       <item row="0" column="0">
        <widget class="QPushButton" name="m_startSolo">
         <property name="enabled">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="styleSheet">
          <string notr="true">font-family: gotham;</string>
@@ -394,7 +394,7 @@ border-color: rgb(136, 138, 133);
          <string>Start Mining</string>
         </property>
         <property name="checkable">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
         <property name="autoDefault">
          <bool>false</bool>
