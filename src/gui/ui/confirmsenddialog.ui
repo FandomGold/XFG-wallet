@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Confirm sending %1 KRB</string>
+   <string>Confirm sending %1 XFG</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -31,7 +31,7 @@
         <string notr="true">font-family: Cinzel;</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Are you sure you want to send &lt;span style=&quot; font-weight:600;&quot;&gt;%1 &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#c4a000;&quot;&gt;F&lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#c4a000;&quot;&gt;₲&lt;/span&gt;?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Are you sure you want to send &lt;span style=&quot; font-weight:600;&quot;&gt;%1 &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#c4a000;&quot;&gt;XF₲&lt;/span&gt;?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -59,7 +59,7 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font-family: Cinzel;</string>
        </property>
        <property name="text">
         <string/>
@@ -110,6 +110,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_okButton">
+       <property name="styleSheet">
+        <string notr="true">font-family: cinzel;</string>
+       </property>
        <property name="text">
         <string>Yes</string>
        </property>
@@ -121,6 +124,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_cancelButton">
+       <property name="styleSheet">
+        <string notr="true">font-family: cinzel;</string>
+       </property>
        <property name="text">
         <string>Cancel</string>
        </property>
