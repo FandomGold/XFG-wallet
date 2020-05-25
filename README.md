@@ -1,6 +1,6 @@
 <h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png" width="1800" height="500" ><img/></h1>
 
-Binaries are made available by Fandom Gold Project community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For more up to date info & tons of ways to earn fango via tips- come [join us](http://discord.fandom.gold) in our discord server.
+Binaries are made available by Fandom Gold Project community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For up to date info & tons of ways to tip or earn Fango - [join us in our discord server(http://discord.fandom.gold)].
 
 
 ### Building on *nix
