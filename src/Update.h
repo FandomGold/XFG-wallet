@@ -1,4 +1,5 @@
 // Copyright (c) 2016 The Karbowanec developers
+// Copyright (c) 2018-2020 Fandom Gold Project developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef UPDATE_H
@@ -10,7 +11,7 @@
 #include <QNetworkReply>
 #include <QUrl>
 
-const static QString DRGLCOIN_UPDATE_URL = "http://drgl.info/update.txt";
+const static QString FANGO_UPDATE_URL = "https://raw.githubusercontent.com/FandomGold/GoldWallet/master/update.txt";
 
 class Updater : public QObject
 {
