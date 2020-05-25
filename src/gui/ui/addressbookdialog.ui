@@ -18,6 +18,8 @@
     <widget class="QTreeView" name="m_addressBookView">
      <property name="styleSheet">
       <string notr="true">font-family:orbitron;
+       background-color: rgb(85, 87, 83);
+       color: rgb(211, 215, 207);
 </string>
      </property>
     </widget>
