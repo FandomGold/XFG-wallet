@@ -1,4 +1,5 @@
 // Copyright (c) 2016 The Karbowanec developers
+// Copyright (c) 2018-2020 The Fandom Gold Project developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include "Update.h"
@@ -66,7 +67,7 @@ void Updater::checkForUpdate()
     {
         connect(manager, SIGNAL(finished(QNetworkReply*)),
                 this, SLOT(replyFinished(QNetworkReply*)));
-        manager->get(QNetworkRequest(QUrl(DRGLCOIN_UPDATE_URL)));
+        manager->get(QNetworkRequest(QUrl(FANGO_UPDATE_URL)));
     }
 }
 
