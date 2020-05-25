@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016-2017 The Karbowanec developers
+// Copyright (c) 2018-2020 Fandom Gold Project developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -179,16 +180,16 @@ void SendFrame::openUriClicked() {
 }
 
 void SendFrame::parsePaymentRequest(QString _request) {
-    if(_request.startsWith("DRGL://", Qt::CaseInsensitive))
+    if(_request.startsWith("fandomgold://", Qt::CaseInsensitive))
     {
-       _request.replace(0, 13, "DRGL:");
+       _request.replace(0, 13, "fandomgold:");
     }
-    if(!_request.startsWith("DRGL:", Qt::CaseInsensitive)) {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with DRGL:"), QtCriticalMsg));
+    if(!_request.startsWith("fandomgold:", Qt::CaseInsensitive)) {
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with fandomgold:"), QtCriticalMsg));
       return;
     }
 
-    if(_request.startsWith("DRGL:", Qt::CaseInsensitive))
+    if(_request.startsWith("fandomgold:", Qt::CaseInsensitive))
     {
       _request.remove(0, 11);
     }
@@ -255,10 +256,10 @@ void SendFrame::sendClicked() {
         }
       }
 
-      // Dev donation
+      // Fandom Gold Project donation
       if (m_ui->donateCheckBox->isChecked()) {
           CryptoNote::WalletLegacyTransfer walletTransfer;
-          walletTransfer.address = "dRGLkSxX3YaRHbvuYYq2iKGPCaQDSKFUVUMYcGqnSyJcMT1DqUBJmfzbvQitnWQ3Fre9SsviDrXkg5LKBykcb7np2Abu2dd16c";
+          walletTransfer.address = "fango4Uxurg6s7mTd7r7aZeMxkdrsPNYQM4yPjmX6rTRh4VZx4QGqe3K29vKB9sEBxMztybnbj3ZvNgGS7ztzLZ88x83hM3GwYD";
           walletTransfer.amount = CurrencyAdapter::instance().parseAmount(m_ui->m_donateSpin->cleanText());
           walletTransfers.push_back(walletTransfer);
       }
