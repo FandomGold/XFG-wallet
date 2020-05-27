@@ -152,7 +152,7 @@ int main(int argc, char* argv[]) {
     splash->show();
   }
 
-  splash->showMessage(QObject::tr("Loading Fandom GOLD blockchain network...."), Qt::AlignLeft | Qt::AlignBottom, Qt::white);
+  splash->showMessage(QObject::tr("Loading Fango blockchain network......."), Qt::AlignLeft | Qt::AlignBottom, Qt::white);
 
   app.processEvents();
   qRegisterMetaType<CryptoNote::TransactionId>("CryptoNote::TransactionId");
