@@ -34,7 +34,7 @@
         <x>0</x>
         <y>0</y>
         <width>846</width>
-        <height>431</height>
+        <height>429</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="m_send_frame_layout">
@@ -561,8 +561,15 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+        <string notr="true">color:rgb(255, 255, 255);
+</string>
        </property>
        <property name="text">
         <string>Fee:</string>
@@ -571,11 +578,18 @@
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+        <string notr="true">color:rgb(255, 255, 255);
+</string>
        </property>
        <property name="text">
-        <string>PaymentID:</string>
+        <string>Payment ID:</string>
        </property>
       </widget>
      </item>
@@ -598,6 +612,13 @@
          <width>150</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>cinzel</family>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
@@ -634,8 +655,15 @@
      </item>
      <item row="5" column="0">
       <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">color: rgb(255, 255, 255);
+</string>
        </property>
        <property name="text">
         <string>Anonymity level:</string>
@@ -655,6 +683,13 @@
          <width>150</width>
          <height>0</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>cinzel</family>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
@@ -699,8 +734,16 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font-family:orbitron;
+font-size:10t;
+</string>
        </property>
        <property name="text">
         <string>Generate Payment ID</string>
@@ -724,17 +767,20 @@
        <property name="cursor">
         <cursorShape>SizeHorCursor</cursorShape>
        </property>
+       <property name="minimum">
+        <number>2</number>
+       </property>
        <property name="maximum">
-        <number>10</number>
+        <number>18</number>
        </property>
        <property name="pageStep">
         <number>1</number>
        </property>
        <property name="value">
-        <number>5</number>
+        <number>2</number>
        </property>
        <property name="sliderPosition">
-        <number>5</number>
+        <number>2</number>
        </property>
        <property name="tracking">
         <bool>false</bool>
@@ -769,7 +815,7 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font-family: Orbitron;</string>
        </property>
        <property name="text">
         <string>Send</string>
@@ -785,8 +831,16 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_clearAllButton">
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font-family:orbitron;
+font-size:10pt;
+</string>
        </property>
        <property name="text">
         <string>Clear All</string>
@@ -799,8 +853,16 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_addRecipientButton">
+       <property name="font">
+        <font>
+         <family>orbitron</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font-family:orbitron;
+font-size:10pt;
+</string>
        </property>
        <property name="text">
         <string>Add Recipient</string>
@@ -860,8 +922,16 @@
      </item>
      <item>
       <widget class="QLabel" name="m_balanceLabel">
+       <property name="font">
+        <font>
+         <family>cinzel</family>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(255, 255, 255);
+font-family: cinzel;
 </string>
        </property>
        <property name="text">
