@@ -23,9 +23,11 @@ mkdir build && cd build && cmake .. && make
 ### Build instructions for Mac
 Same as *nix build instructions but cmake will likely need your qt path, so :
 ```
-cmake -DCMAKE_PREFIX_PATH:STRING=<Qt path/Qt version/clang_64/> 
+mkdir build && cd build
+cmake -DCMAKE_PREFIX_PATH:STRING="/usr/local/Cellar/qt/<qt version>/ .."
+make
 ```
 Additional build step to bundle static libraries with app package:
 ```
-<Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/fango-wallet.app
+/usr/local/Cellar/qt/<qt version>/bin/macdeployqt> <path to your project/build/fango-wallet.app
 ```
