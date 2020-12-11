@@ -1,6 +1,6 @@
 <h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/XFG-data/master/images/F8851747-376B-4E59-9C8E-7C25BF753C59.jpeg" width="1800" height="500" ><img/></h1>
 
-Binaries are made available by Fandom Gold Project community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For up to date info & tons of ways to earn or tip Fango - [join us in our discord](http://discord.fandom.gold).
+Binaries are made available by Fandom Gold Project and Fango community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For up to date info & tons of ways to earn or tip Fango - [join us in our discord](http://discord.fandom.gold).
 
 
 ### Building on *nix
