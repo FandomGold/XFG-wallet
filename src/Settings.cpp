@@ -104,7 +104,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "176.223.134.27:18180" << "188.226.177.187:18180" << "xfg.fandroid.net:18180" << "104.236.0.16:18180" << "178.128.164.245:18180"; 
+  defaultNodesList << "fandomgold.org:18180" << "188.226.177.187:18180" << "radioactive.es:18180" << "104.236.0.16:18180" << "178.128.164.245:18180" << "cz.derogold4ever.online:18180" << "fangotango.hopto.org:18180";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
