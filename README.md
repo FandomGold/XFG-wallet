@@ -1,8 +1,12 @@
 <h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png"><img/></h1>
 
-Binaries are made available by Fango community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. For up to date info & tons of ways to earn or tip Fango - [join us in our discord](http://discord.fandom.gold).
+## Fango Desktop Wallet
+### Be Your Own Bank
+Includes built-in solo & pool options to mine XFG.
 
+For up to date info & tons of ways to tip or earn Fango - [join us in discord](http://discord.fandom.gold).
 
+See [Release](https://github.com/FandomGold/fango-wallet/releases) section for pre-built binaries
 ### Building on *nix
 
 **1. Clone wallet sources**
