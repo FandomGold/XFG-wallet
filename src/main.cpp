@@ -31,6 +31,7 @@
 
 using namespace WalletGui;
 
+
 int main(int argc, char* argv[]) {
 
   QApplication app(argc, argv);
@@ -109,7 +110,7 @@ int main(int argc, char* argv[]) {
 
   //Create registry entries for URL execution
   QSettings karbowanecKey("HKEY_CLASSES_ROOT\\FandomGold", QSettings::NativeFormat);
-  karbowanecKey.setValue(".", "Fandom Gold Wallet");
+  karbowanecKey.setValue(".", "Fango Wallet");
   karbowanecKey.setValue("URL Protocol", "");
   QSettings karbowanecOpenKey("HKEY_CLASSES_ROOT\\FandomGold\\shell\\open\\command", QSettings::NativeFormat);
   karbowanecOpenKey.setValue(".", "\"" + QCoreApplication::applicationFilePath().replace("/", "\\") + "\" \"%1\"");
@@ -120,7 +121,7 @@ int main(int argc, char* argv[]) {
   QProcess exec;
 
   //as root
-  args << "-c" << "printf '[Desktop Entry]\\nName = Fandom Gold URL Handler\\nGenericName = FanGo\\nComment = Handle URL Sheme fandomgold://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/fandomgold;\\nIcon = Gold Wallet' | tee /usr/share/applications/fandomgold-handler.desktop";
+  args << "-c" << "printf '[Desktop Entry]\\nName = Fango URL Handler\\nGenericName = Fango\\nComment = Handle URL Sheme fandomgold://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/fandomgold;\\nIcon = Gold Wallet' | tee /usr/share/applications/fandomgold-handler.desktop";
   exec.start("/bin/sh", args);
   exec.waitForFinished();
 

@@ -46,7 +46,8 @@
         <file alias="cryptonote">images/FanG.png</file>
         <file alias="clock">images/clock.gif</file>
         <file alias="handle.png">images/handle.png</file>
-        <file alias="screen">images/screen.png</file>
+        <file alias="banner">images/fangobanner.png</file>
+        <file alias="xfgblx">images/xfgblx.gif</file>
     </qresource>
     <qresource prefix="/skin">
         <file>default.qss</file>

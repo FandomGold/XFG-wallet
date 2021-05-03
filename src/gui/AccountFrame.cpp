@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2016-2017 The Karbowanec developers
+// Copyright (c) 2017-2021 The Fango developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,6 +8,7 @@
 #include <QTimer>
 #include <QFontDatabase>
 #include <QFont>
+#include <QMovie>
 #include "AccountFrame.h"
 #include "WalletAdapter.h"
 #include "CurrencyAdapter.h"
@@ -15,8 +17,13 @@
 
 namespace WalletGui {
 
-AccountFrame::AccountFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::AccountFrame) {
+AccountFrame::AccountFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::AccountFrame),
+  m_xfgMovie(new QMovie(this)){
   m_ui->setupUi(this);
+  m_xfgMovie->setFileName(":images/xfgblx");
+  m_xfgMovie->setScaledSize(QSize(80, 80));
+  m_ui->m_xfgLabel->setMovie(m_xfgMovie);
+  m_xfgMovie->start();
   connect(&WalletAdapter::instance(), &WalletAdapter::updateWalletAddressSignal, this, &AccountFrame::updateWalletAddress);
   connect(&WalletAdapter::instance(), &WalletAdapter::walletActualBalanceUpdatedSignal, this, &AccountFrame::updateWalletBalance,
     Qt::QueuedConnection);

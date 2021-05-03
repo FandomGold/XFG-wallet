@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016 The Karbowanec developers
-// Copyright (c) 2018-2020 Fandom Gold Project developers
+// Copyright (c) 2018-2021 Fango developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -104,7 +104,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "fandomgold.org:18180" << "188.226.177.187:18180" << "radioactive.es:18180" << "104.236.0.16:18180" << "178.128.164.245:18180" << "cz.derogold4ever.online:18180" << "fangotango.hopto.org:18180";
+  defaultNodesList << "fandomgold.org:18180" << "188.226.177.187:18180" << "radioactive.es:18180" << "104.236.0.16:18180" << "178.128.164.245:18180" << "cz.derogold4ever.online:18180" << "fangotango.hopto.org:18180" << "xfg.fandroid.net:18180";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
@@ -281,7 +281,7 @@ quint16 Settings::getMiningThreads() const {
 }
 
 bool Settings::isMiningOnLaunchEnabled() const {
-  return m_settings.contains("autostartMininig") ? m_settings.value("autostartMininig").toBool() : false;
+  return m_settings.contains("autostartMining") ? m_settings.value("autostartMining").toBool() : false;
 }
 
 bool Settings::isStartOnLoginEnabled() const {
@@ -390,7 +390,7 @@ void Settings::setTrackingMode(bool _tracking) {
 
 void Settings::setMiningOnLaunchEnabled(bool _automining) {
   if (isMiningOnLaunchEnabled() != _automining) {
-    m_settings.insert("autostartMininig", _automining);
+    m_settings.insert("autostartMining", _automining);
     saveSettings();
   }
 }

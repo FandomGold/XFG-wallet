@@ -2,7 +2,7 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016-2018 The Karbowanec developers
-// Copyright (c) 2018-2019 The Fandom Gold Project
+// Copyright (c) 2018-2021 The Fango Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -148,7 +148,7 @@ void MainWindow::connectToSignals() {
 }
 
 void MainWindow::initUi() {
-  setWindowTitle(QString(tr("Fandom Gold Wallet %1")).arg(Settings::instance().getVersion()));
+  setWindowTitle(QString(tr("Fango Wallet %1")).arg(Settings::instance().getVersion()));
 #ifdef Q_OS_WIN32
   createTrayIcon();
 #endif
@@ -193,7 +193,7 @@ void MainWindow::initUi() {
   m_remoteModeIconLabel->hide();
   m_trackingModeIconLabel->hide();
   m_trackingModeIconLabel->setToolTip(tr("Tracking wallet. Spending unavailable"));
-  m_remoteModeIconLabel->setToolTip(tr("Connected by FANDOM GOLD service node"));
+  m_remoteModeIconLabel->setToolTip(tr("Connected by FANGO Elder Node"));
 
   QString connection = Settings::instance().getConnection();
   if(connection.compare("remote") == 0) {
@@ -588,7 +588,7 @@ void MainWindow::DisplayCmdLineHelp() {
     QMessageBox *msg = new QMessageBox(QMessageBox::Information, QObject::tr("Help"),
                        cmdLineParser.getHelpText(),
                        QMessageBox::Ok, this);
-    msg->setInformativeText(tr("More info can be found at Fandom Gold wiki on https://github.com/FandomGold/fandomgold/wiki"));
+    msg->setInformativeText(tr("More info can be found on Fango wiki at https://github.com/FandomGold/fango/wiki"));
     QFont font = QFontDatabase::systemFont(QFontDatabase::FixedFont);
     msg->setFont(font);
     QSpacerItem* horizontalSpacer = new QSpacerItem(650, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -927,7 +927,7 @@ void MainWindow::createTrayIcon()
 {
 #ifdef Q_OS_WIN
     m_trayIcon = new QSystemTrayIcon(QPixmap(":images/cryptonote"), this);
-    QString toolTip = QString(tr("Fandom Gold Wallet %1")).arg(Settings::instance().getVersion());
+    QString toolTip = QString(tr("Fango Wallet %1")).arg(Settings::instance().getVersion());
     m_trayIcon->setToolTip(toolTip);
     m_trayIcon->show();
 #endif

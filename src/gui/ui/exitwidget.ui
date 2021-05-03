@@ -448,7 +448,7 @@
      </property>
      <property name="font">
       <font>
-       <family>Cinzel Decorative</family>
+       <family>Orbitron</family>
        <pointsize>12</pointsize>
        <weight>50</weight>
        <italic>false</italic>
@@ -459,7 +459,7 @@
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(25, 25, 25);</string>
+      <string notr="true">font-family: Orbitron;background-color: rgb(25, 25, 25);</string>
      </property>
      <property name="text">
       <string> %1 wallet is saving data.

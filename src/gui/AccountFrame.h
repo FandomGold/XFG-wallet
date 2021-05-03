@@ -5,6 +5,7 @@
 #pragma once
 
 #include <QFrame>
+class QMovie;
 
 namespace Ui {
 class AccountFrame;
@@ -22,7 +23,7 @@ public:
 
 private:
   QScopedPointer<Ui::AccountFrame> m_ui;
-
+  QMovie* m_xfgMovie;
   void updateWalletAddress(const QString& _address);
   void updateWalletBalance(quint64 _balance);
   void reset();

@@ -34,7 +34,7 @@
         <x>0</x>
         <y>0</y>
         <width>846</width>
-        <height>429</height>
+        <height>428</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="m_send_frame_layout">
@@ -707,16 +707,16 @@
         <number>7</number>
        </property>
        <property name="minimum">
-        <double>0.000100000000000</double>
+        <double>0.008000000000000</double>
        </property>
        <property name="maximum">
         <double>9999999.000000000000000</double>
        </property>
        <property name="singleStep">
-        <double>0.000100000000000</double>
+        <double>0.001000000000000</double>
        </property>
        <property name="value">
-        <double>0.000100000000000</double>
+        <double>0.008000000000000</double>
        </property>
       </widget>
      </item>
@@ -777,10 +777,10 @@ font-size:10t;
         <number>1</number>
        </property>
        <property name="value">
-        <number>2</number>
+        <number>3</number>
        </property>
        <property name="sliderPosition">
-        <number>2</number>
+        <number>3</number>
        </property>
        <property name="tracking">
         <bool>false</bool>

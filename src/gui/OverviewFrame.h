@@ -6,12 +6,15 @@
 
 #include <QFrame>
 #include <QStyledItemDelegate>
+#include <QNetworkAccessManager>
 
 namespace Ui {
 class OverviewFrame;
 }
 
 namespace WalletGui {
+
+class PriceProvider;
 
 class RecentTransactionsModel;
 
@@ -24,9 +27,12 @@ public:
   ~OverviewFrame();
 
 private:
+  QNetworkAccessManager m_networkManager;
   QScopedPointer<Ui::OverviewFrame> m_ui;
   QSharedPointer<RecentTransactionsModel> m_transactionModel;
+  PriceProvider* m_priceProvider;  
 
+  void onPriceFound(const QString& _name, const QString& _address);
   void transactionsInserted(const QModelIndex& _parent, int _first, int _last);
   void transactionsRemoved(const QModelIndex& _parent, int _first, int _last);
   void layoutChanged();
