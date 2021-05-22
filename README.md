@@ -1,8 +1,7 @@
 <h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png"><img/></h1>
 
-# Fango Desktop Wallet
-## Be Your Own Private Bank
-Includes built-in solo & pool options to mine XFG.
+# Be Your Own Private Bank
+Fango wallet includes built-in solo & pool options to mine XFG.
 
 See [Release](https://github.com/FandomGold/fango-wallet/releases) section for pre-built binaries
 
