@@ -9,6 +9,15 @@
 #include "TransactionFrame.h"
 #include "RecentTransactionsModel.h"
 #include "WalletAdapter.h"
+#include "PriceProvider.h"
+#include "NodeAdapter.h"
+
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QNetworkReply>
+#include <QStringList>
+#include <QUrl>
 
 #include "ui_overviewframe.h"
 
@@ -37,7 +46,7 @@ public:
   }
 };
 
-OverviewFrame::OverviewFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::OverviewFrame), m_transactionModel(new RecentTransactionsModel) {
+OverviewFrame::OverviewFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::OverviewFrame), m_priceProvider(new PriceProvider(this)), m_transactionModel(new RecentTransactionsModel) {
   m_ui->setupUi(this);
 
   connect(&WalletAdapter::instance(), &WalletAdapter::walletActualBalanceUpdatedSignal, this, &OverviewFrame::updateActualBalance,
@@ -48,6 +57,7 @@ OverviewFrame::OverviewFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::O
     Qt::QueuedConnection);
   connect(m_transactionModel.data(), &QAbstractItemModel::rowsInserted, this, &OverviewFrame::transactionsInserted);
   connect(m_transactionModel.data(), &QAbstractItemModel::layoutChanged, this, &OverviewFrame::layoutChanged);
+  /*connect(m_priceProvider, &PriceProvider::priceFoundSignal, this, &OverviewFrame::onPriceFound);*/
 
 
   m_ui->m_tickerLabel1->setText(CurrencyAdapter::instance().getCurrencyTicker().toUpper());
@@ -87,10 +97,29 @@ void OverviewFrame::updatePendingBalance(quint64 _balance) {
   quint64 actualBalance = WalletAdapter::instance().getActualBalance();
   m_ui->m_totalBalanceLabel->setText(CurrencyAdapter::instance().formatAmount(_balance + actualBalance).remove(','));
 }
+/*
+void OverviewFrame::onPriceFound(const QString& _usdxfg, const QString &_usdmarketcap, const QString &_usdvolume) {
+
+  float total = 0;
+  xfgusd = _usdxfg.toFloat();
+  m_ui->m_xfgusd->setText("$" + _usdxfg);
+  m_ui->m_marketCap->setText("$" + _usdmarketcap);
+  m_ui->m_volume->setText("$" + _usdvolume);
+  updatePortfolio();z
+}
+
+void OverviewFrame::updatePortfolio() {
+
+  float total = 0;
+  total = xfgusd * (float)OverviewFrame::totalBalance;
+  m_ui->m_totalPortfolioLabelUSD->setText("TOTAL " + CurrencyAdapter::instance().formatAmount(OverviewFrame::totalBalance) +
+  " XFG | " + CurrencyAdapter::instance().formatCurrencyAmount(total / 10000000) + " " + "USD");
+}*/
 
 void OverviewFrame::reset() {
   updateActualBalance(0);
   updatePendingBalance(0);
+  /*m_priceProvider->getPrice();*/
 }
 
 }

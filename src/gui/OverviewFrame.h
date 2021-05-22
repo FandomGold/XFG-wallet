@@ -31,14 +31,17 @@ private:
   QScopedPointer<Ui::OverviewFrame> m_ui;
   QSharedPointer<RecentTransactionsModel> m_transactionModel;
   PriceProvider* m_priceProvider;  
+  quint64 totalBalance = 0;
+  float xfgusd = 0;
 
-  void onPriceFound(const QString& _name, const QString& _address);
+  void onPriceFound(const QString& _usdxfg, const QString& _usdmarketcap, const QString& _usdvolume);
   void transactionsInserted(const QModelIndex& _parent, int _first, int _last);
   void transactionsRemoved(const QModelIndex& _parent, int _first, int _last);
   void layoutChanged();
   void updateActualBalance(quint64 _balance);
   void updatePendingBalance(quint64 _balance);
   void reset();
+  void updatePortfolio();
 };
 
 }
