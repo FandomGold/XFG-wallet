@@ -101,7 +101,7 @@
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>95</height>
+        <height>70</height>
        </size>
       </property>
       <property name="maximumSize">
@@ -125,7 +125,7 @@
        <enum>QFrame::Raised</enum>
       </property>
       <property name="lineWidth">
-       <number>0</number>
+       <number>-1</number>
       </property>
      </widget>
     </item>
@@ -2765,8 +2765,8 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>Orbitron</family>
-     <pointsize>10</pointsize>
+     <family>ZELDA</family>
+     <pointsize>12</pointsize>
      <weight>50</weight>
      <italic>false</italic>
      <bold>false</bold>
@@ -2794,7 +2794,7 @@ selection-background-color: rgb(237, 212, 0);</string>
     <string/>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 10pt &quot;Orbitron&quot;;</string>
+    <string notr="true">font: 12pt &quot;ZELDA&quot;;</string>
    </property>
    <property name="movable">
     <bool>false</bool>
@@ -2827,16 +2827,7 @@ selection-background-color: rgb(237, 212, 0);</string>
    <addaction name="m_addressBookAction"/>
    <addaction name="m_miningAction"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar">
-   <property name="font">
-    <font>
-     <family>Capsuula</family>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-family:&quot;Capsuula&quot;;</string>
-   </property>
-  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="accountToolBar">
    <property name="windowTitle">
     <string>Account toolbar</string>
@@ -2861,7 +2852,7 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="size" stdset="0">
@@ -2887,7 +2878,7 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
   </action>
@@ -2907,7 +2898,7 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
   </action>
@@ -2923,11 +2914,11 @@ selection-background-color: rgb(237, 212, 0);</string>
      <normaloff>:/icons/transactions</normaloff>:/icons/transactions</iconset>
    </property>
    <property name="text">
-    <string>History</string>
+    <string>Transactions</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
   </action>
@@ -2958,7 +2949,7 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
   </action>
