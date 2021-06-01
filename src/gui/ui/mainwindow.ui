@@ -115,6 +115,9 @@
         <family>Capsuula</family>
        </font>
       </property>
+      <property name="toolTipDuration">
+       <number>0</number>
+      </property>
       <property name="styleSheet">
        <string notr="true">font-family: Capsuula;</string>
       </property>
@@ -125,7 +128,7 @@
        <enum>QFrame::Raised</enum>
       </property>
       <property name="lineWidth">
-       <number>-1</number>
+       <number>0</number>
       </property>
      </widget>
     </item>
@@ -141,6 +144,9 @@
        <font>
         <family>GothamB</family>
        </font>
+      </property>
+      <property name="toolTipDuration">
+       <number>0</number>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
