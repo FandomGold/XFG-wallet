@@ -107,7 +107,7 @@
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>70</height>
+        <height>100</height>
        </size>
       </property>
       <property name="font">
@@ -223,15 +223,15 @@
       </property>
       <property name="font">
        <font>
-        <family>ZELDA</family>
-        <pointsize>14</pointsize>
+        <family>Orbitron</family>
+        <pointsize>10</pointsize>
         <weight>50</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-family: &quot;ZELDA&quot;;</string>
+       <string notr="true">font-family: &quot;Orbitron&quot;;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -2765,8 +2765,8 @@ selection-background-color: rgb(237, 212, 0);</string>
    </property>
    <property name="font">
     <font>
-     <family>ZELDA</family>
-     <pointsize>12</pointsize>
+     <family>Orbitron</family>
+     <pointsize>10</pointsize>
      <weight>50</weight>
      <italic>false</italic>
      <bold>false</bold>
@@ -2794,7 +2794,8 @@ selection-background-color: rgb(237, 212, 0);</string>
     <string/>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;ZELDA&quot;;</string>
+    <string notr="true">font: 10pt &quot;Orbitron&quot;;
+</string>
    </property>
    <property name="movable">
     <bool>false</bool>
@@ -2914,7 +2915,7 @@ selection-background-color: rgb(237, 212, 0);</string>
      <normaloff>:/icons/transactions</normaloff>:/icons/transactions</iconset>
    </property>
    <property name="text">
-    <string>Transactions</string>
+    <string>History</string>
    </property>
    <property name="font">
     <font>

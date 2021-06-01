@@ -114,28 +114,31 @@
           </property>
           <property name="font">
            <font>
-            <family>zelda</family>
-            <pointsize>13</pointsize>
+            <family>orbitron</family>
+            <pointsize>10</pointsize>
            </font>
           </property>
           <property name="layoutDirection">
            <enum>Qt::LeftToRight</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">font-family: zelda;
+           <string notr="true">font-family: orbitron;
 color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 223, 255), stop:1 rgba(255, 0, 216, 255));</string>
           </property>
           <property name="lineWidth">
            <number>0</number>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#cbc7c4;&quot;&gt;Recent transactions  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#cbc7c4;&quot;&gt;Recent Transactions &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="textFormat">
            <enum>Qt::AutoText</enum>
           </property>
           <property name="scaledContents">
            <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
           <property name="wordWrap">
            <bool>false</bool>
@@ -368,7 +371,7 @@ color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 22
              </color>
             </brush>
            </colorrole>
-            <colorrole role="ToolTipBase">
+           <colorrole role="ToolTipBase">
             <brush brushstyle="SolidPattern">
              <color alpha="0">
               <red>0</red>
@@ -1038,7 +1041,7 @@ color:rgb(238, 238, 236);</string>
          <bool>true</bool>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
         <property name="wordWrap">
          <bool>false</bool>
@@ -1065,7 +1068,7 @@ color:rgb(238, 238, 236);</string>
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 font-family: &quot;Cinzel&quot;;
-color:rgb(238, 238, 236);</string>
+color:rgb(211, 215, 207);</string>
         </property>
         <property name="text">
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dddddd;&quot;&gt;Available:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1302,6 +1305,9 @@ color:rgb(211, 215, 207);</string>
         <property name="text">
          <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dddddd;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
         <property name="margin">
          <number>9</number>
         </property>
@@ -1320,6 +1326,7 @@ color:rgb(211, 215, 207);</string>
         </property>
         <property name="font">
          <font>
+          <pointsize>9</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -1782,6 +1789,9 @@ color:rgb(238, 238, 236);</string>
         </property>
         <property name="text">
          <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dddddd;&quot;&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
         <property name="margin">
          <number>9</number>

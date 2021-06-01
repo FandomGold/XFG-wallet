@@ -437,8 +437,6 @@ QStatusBar#statusBar {
 }
 
 #m_overviewWalletFrame {
-	
-	/*background-image: url(:/images/screen) no-repeat center;*/
 	border: 7px solid qconicalgradient(cx:0.5, cy:0.5, angle:89.1, stop:0 rgba(136, 106, 22, 255), stop:0.104478 rgba(166, 140, 41, 255), stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.537313 rgba(168, 142, 42, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255), stop:0.800995 rgba(187, 156, 51, 255), stop:1 rgba(137, 108, 26, 255));
 }
 
