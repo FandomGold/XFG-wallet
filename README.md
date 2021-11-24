@@ -5,7 +5,7 @@ Use your PC or laptop's CPU power to mine Fango and start making money while you
 
 XFG wallet includes built-in solo & pool mining options.
 
-See [Release](https://github.com/FandomGold/fango-wallet/releases) section for pre-built binaries
+See [Releases](https://github.com/FandomGold/XFG-wallet/releases) for pre-built binaries
 
 
 ### Build From Source 
