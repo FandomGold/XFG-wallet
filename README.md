@@ -1,22 +1,25 @@
 <h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png"><img/></h1>
 
 # Be Your Own Private Bank
-XFG wallet includes built-in solo & pool options to mine Fango.
+Use your PC or laptop's CPU power to mine Fango and start making money while you sleep.
+
+XFG wallet includes built-in solo & pool mining options.
 
 See [Release](https://github.com/FandomGold/fango-wallet/releases) section for pre-built binaries
 
-For up to date info & tons of ways to tip or earn Fango - [join us in discord](http://discord.fandom.gold).
 
-### Building on *nix
+### Build From Source 
+
+### instructions for *nix users
 
 **1. Clone wallet sources**
 
 ```
-git clone --recursive https://github.com/FandomGold/fango-wallet
+git clone --recursive https://github.com/FandomGold/xfg-wallet
 ```
 
 ```
-cd fango-wallet
+cd xfg-wallet
 ```
 
 **2. Build**
@@ -24,6 +27,22 @@ cd fango-wallet
 ```
 mkdir build && cd build && cmake .. && make
 ```
+
+**3. Running XFG Wallet**
+
+Resulting software application will be found in release folder
+
+```
+cd build/release
+```
+
+Allow filename *Fango-Wallet* to operate as an executable program or run console command:
+
+```
+./Fango-Wallet
+```
+
+-------------------------------------
 ### Build instructions for Mac
 Same as *nix build instructions but cmake will likely need your qt path, so :
 ```
@@ -35,3 +54,6 @@ Additional build step to bundle static libraries with app package:
 ```
 /usr/local/Cellar/qt/<qt version>/bin/macdeployqt> <path to your project/build/fango-wallet.app
 ```
+
+Need any kind of help or for more info about Fango- plus tons of more ways to use & earn $XFG - join our ever-growing grassroots community of XFG Holders, miners, & users in [FANGO's official discord server](https://discord.gg/2wQAgAqdUM).
+
