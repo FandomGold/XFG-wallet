@@ -1,4 +1,4 @@
-<h1 align="center"><img title="The Long Night Is Coming" src="https://raw.githubusercontent.com/FandomGold/fango-wallet/master/src/images/splash.png"><img/></h1>
+<h1 align="center"><img height="400px" width="800px" title="The Long Night Is Coming" src="https://github.com/usexfg/XFG-wallet/blob/fe5a16c78f4eae23907a8e0b3ae794ea96c6f467/src/images/splash.png"><img/></h1>
 
 # Be Your Own Private Bank
 Use your PC or laptop's CPU power to mine Fango and start making money while you sleep.
